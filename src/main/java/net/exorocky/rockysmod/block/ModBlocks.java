@@ -15,7 +15,8 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
-    public static final Block MYTHRIL_ORE = registerBlock("mythril_ore", new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool().hardness(2f)), new FabricItemSettings().rarity(Rarity.UNCOMMON).group(ModItemGroup.MAIN));
+    public static final Block MYTHRIL_ORE = registerBlock("mythril_ore", new Block(FabricBlockSettings.of(Material.METAL).strength(1f).requiresTool().hardness(2f)), new FabricItemSettings().rarity(Rarity.UNCOMMON).group(ModItemGroup.MAIN));
+    public static final Block MYTHRIL_BLOCK = registerBlock("mythril_block", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool().hardness(2f)), new FabricItemSettings().rarity(Rarity.UNCOMMON).group(ModItemGroup.MAIN));
 
     private static Block registerBlock(String name, Block block, FabricItemSettings settings) {
         registerBlockItem(name, block, settings);

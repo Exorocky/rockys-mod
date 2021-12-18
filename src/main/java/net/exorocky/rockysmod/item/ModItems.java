@@ -12,6 +12,9 @@ public class ModItems {
 
     //Mythril
     public static final Item MYTHRIL_INGOT = registerItem("mythril_ingot", new Item(new FabricItemSettings().group(ModItemGroup.MAIN).rarity(Rarity.UNCOMMON)));
+    public static final Item MYTHRIL_NUGGET = registerItem("mythril_nugget", new Item(new FabricItemSettings().group(ModItemGroup.MAIN).rarity(Rarity.UNCOMMON)));
+    public static final Item RAW_MYTHRIL = registerItem("raw_mythril", new Item(new FabricItemSettings().group(ModItemGroup.MAIN).rarity(Rarity.UNCOMMON)));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(RockyMod.MOD_ID, name), item);

@@ -1,7 +1,10 @@
 {
   "item.rockysmod.mythril_ingot": "Mythril Ingot",
+  "item.rockysmod.mythril_nugget": "Mythril Nugget",
+  "item.rockysmod.raw_mythril": "Raw Mythril",
 
   "block.rockysmod.mythril_ore": "Mythril Ore",
+  "block.rockysmod.mythril_block": "Mythril Block",
 
   "itemGroup.rockysmod.main": "Rocky's Mod - Main"
 }
