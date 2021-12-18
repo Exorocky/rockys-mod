@@ -1,9 +1,9 @@
-package net.exorocky.rockysmod.blocks;
+package net.exorocky.rockysmod.block;
 
 import net.exorocky.rockysmod.RockyMod;
+import net.exorocky.rockysmod.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
@@ -12,11 +12,10 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
-import org.lwjgl.system.CallbackI;
 
 public class ModBlocks {
 
-    public static final Block MYTHRIL_ORE = registerBlock("mythril_ore", new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool().hardness(2f)), new FabricItemSettings().rarity(Rarity.UNCOMMON).group(ItemGroup.BUILDING_BLOCKS));
+    public static final Block MYTHRIL_ORE = registerBlock("mythril_ore", new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool().hardness(2f)), new FabricItemSettings().rarity(Rarity.UNCOMMON).group(ModItemGroup.MAIN));
 
     private static Block registerBlock(String name, Block block, FabricItemSettings settings) {
         registerBlockItem(name, block, settings);

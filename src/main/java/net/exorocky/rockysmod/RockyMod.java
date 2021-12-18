@@ -1,7 +1,7 @@
 package net.exorocky.rockysmod;
 
-import net.exorocky.rockysmod.blocks.ModBlocks;
-import net.exorocky.rockysmod.items.ModItems;
+import net.exorocky.rockysmod.block.ModBlocks;
+import net.exorocky.rockysmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
