@@ -1,5 +1,6 @@
 package net.exorocky.rockysmod;
 
+import net.exorocky.rockysmod.blocks.ModBlocks;
 import net.exorocky.rockysmod.items.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
@@ -11,7 +12,9 @@ public class RockyMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 		LOGGER.info("Hello Fabric world!");
 	}
